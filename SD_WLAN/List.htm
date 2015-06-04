@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<!--
+/*
+    List.htm example for FlashAir(TM) TOSHIBA
+    (c) 2015 Yokinsoft Jake.Y.Yoshimura http://www.yo-ki.com
+    MIT License
+ */
+-->
+<html>
+    <head>
+        <title>FlashAir</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <script src="/SD_WLAN/js/jquery-1.11.3.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/SD_WLAN/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/SD_WLAN/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/SD_WLAN/js/bootstrap.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="/SD_WLAN/js/html5shiv.min.js"></script>
+        <script src="/SD_WLAN/js/respond.min.js"></script>
+        <![endif]-->
+
+
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script> -->
+
+        <script src="/SD_WLAN/js/isotope.pkgd.min.js"></script>
+
+        <!-- Core CSS file -->
+        <link rel="stylesheet" href="/SD_WLAN/css//photoswipe.css"> 
+        <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+	            In the folder of skin CSS file there are also:
+	            - .png and .svg icons sprite, 
+	            - preloader.gif (for browsers that do not support CSS animations) -->
+        <link rel="stylesheet" href="/SD_WLAN/css/default-skin/default-skin.css"> 
+        <!-- Core JS file -->
+        <script src="/SD_WLAN/js/photoswipe.min.js"></script> 
+        <!-- UI JS file -->
+        <script src="/SD_WLAN/js/photoswipe-ui-default.min.js"></script> 
+
+        <link href="/SD_WLAN/css/yokins-fa.css" rel="stylesheet" />
+        <script src="/SD_WLAN/js/yokins-fa.js"></script>
+        <script src="/SD_WLAN/js/yokins-fa-client.js"></script>
+        <script src="/~/lang.js"></script>
+        <script>
+            wlansd = new Array();
+            <!--WLANSDJLST-->
+        </script>
+        <script id="itemTeamplte" type="text/template">
+            <div class="grid-item col-xs-4 col-sm-3 col-md-2 col-lg-1">
+                <a>
+                    <div class="image-container">
+                        <div class="name-label">Filename comes here</div>
+                        <img style="display:none; visibility:hidden;" />
+                    </div>
+                </a>
+            </div>
+        </script>
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-sm">
+            <div id="connectionIndicator"></div>
+            <div>
+                <div id="headerLogoContainer">
+                    <a href="/"><div id="headerLogo" class="fa-logo-sm"></div><span id="hostUrl" class=""></span></a>
+                </div>
+                <div id="headerControls">
+                    <!--
+                    <i class="glyphicon glyphicon-filter"></i>
+                    <div id="menuFilter" class="btn-group" role="group">
+                        <button class="btn btn-default btn-sm active" data-show="pictures"><i class="glyphicon glyphicon-picture"></i></button>
+                        <button class="btn btn-default btn-sm active" data-show="others"><i class="glyphicon glyphicon-file"></i></button>
+                    </div>
+                        -->
+                    <i class="glyphicon glyphicon-sort"></i>
+                    <div id="menuSort" class="btn-group" role="group" data-sortascending="false">
+                        <button class="btn btn-default btn-xs" data-sort="name"><i class="glyphicon glyphicon-sort-by-alphabet"></i></button>
+                        <button class="btn btn-default btn-xs active" data-sort="datetime"><i class="glyphicon glyphicon-time"></i> </button>
+                    </div>
+                </div>
+                <div class="navbar-text" style="margin-top: 8px; margin-bottom: 8px; margin-right: 1em; position: fixed; top: 0; right: 0.8em;">
+                    <a id="setBtn" href="/~/Set.htm" class="btn btn-default pull-right" ><span class="glyphicon glyphicon-wrench"></span></a>
+                </div>
+            </div>
+            <div id="navigationPath">
+                <a href="/" id="moveUpLink" class="btn btn-warning btn-xs dir-nav"><i class="glyphicon glyphicon-level-up"></i></a>
+                <span id="pageTitle"></span>
+            </div>
+        </nav>
+
+        <div id="grid" class="row">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+﻿/*
+    List.htm example for FlashAir(TM) TOSHIBA
+    (c) 2015 Yokinsoft Jake.Y.Yoshimura
+	 http://www.yo-ki.com
+    MIT License
+ */
+#headerLogoContainer {
+    float: left;
+    margin-top: 3px;
+    margin-left: 1em;
+    padding-right: 1em;
+}
+#headerLogo {
+}
+#headerLogoContainer a {
+    text-decoration:none;
+    color: #4b6bd1;
+}
+#hostUrl {
+    vertical-align:top;
+    color: gray;
+    font-weight: bold;
+}
+#headerControls {
+    float: left;
+    margin: 3px 1em 0 1em;
+   
+}
+#pageTitle {
+    text-wrap:none; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 50%;
+}
+#navigationPath {
+    clear: both;
+    margin-left: 1em;
+    margin-bottom: 2px;
+}
+#navigationPath a.btn { padding: 0 1em ;}
+#navbar .navbar-text {
+    margin-top: 8px; margin-bottom: 8px;
+}
+.fa-logo
+{
+    display: inline-block;
+    width: 134px;
+    height: 25px;
+    background-image: url(/~/2xsize_parts.png);
+    background-repeat: no-repeat;
+    background-position: -5px -185px;
+    background-size: 480px 525px;
+    -webkit-background-size: 480px 525px;
+    -moz-background-size: 480px 525px;
+    -o-background-size: 480px 525px;
+    -ms-background-size: 480px 525px;
+}
+.fa-logo-sm
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px\9;
+    height: 18px\9;
+    background-image: url(/~/1xsize_parts.png)\9;
+    background-repeat: no-repeat\9;
+    background-position: -140px\9 -185px\9;
+    cursor: pointer\9;
+
+    width: 32px;
+    height: 18px;
+    background-image: url(/~/2xsize_parts.png);
+    background-repeat: no-repeat;
+    background-position: -148px -185px;
+    cursor: pointer;
+    background-size: 480px 525px;
+    -webkit-background-size: 480px 525px;
+    -moz-background-size: 480px 525px;
+    -o-background-size: 480px 525px;
+    -ms-background-size: 480px 525px;
+}
+#headerControls .btn-xs { padding-left: 1.4em; padding-right: 1.4em;}
+#pageTitle {
+}
+#moveUpLink
+{
+    display: none;
+}
+#grid {
+    margin-top: 50px;
+    overflow-x: hidden;
+    margin-right: 0;
+    margin-left: 0;
+}
+.grid-item-width {
+        width: 20%;
+        height: 160px;
+}
+.grid-item {
+    padding: 0; 
+                 
+}
+.grid-item > img {  }
+.grid-item div.image-container {
+    height: 160px;
+    position: relative;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.grid-item .name-label {
+    background-color: #454545;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    bottom: 0;
+    text-align:center;
+    color: white;
+    background: linear-gradient(0deg,rgba(0,0,0,.95) 0,rgba(0,0,0,0) 100%);
+}
+
+
+#connectionIndicator {
+    border: 4px solid;
+    border-color: gray;
+    border-radius: 4px 4px;
+    position: fixed;
+    right: 0.4em;
+    top: 0.4em;
+}
+    #connectionIndicator.connected {
+        border-color: #4cff00;
+        transition: border-color 0.2s ease;
+    }
+    #connectionIndicator.connecting {
+        border-color: #f5ff04;
+        transition: border-color 1s ease;
+    }
+    #setBtn {
+        display:none;
+    }
+
+    .icon-dcim {
+        background-size: contain;
+        background-image: url(/~/dcim.png);
+    }
+    .icon-folder {
+        background-size: contain;
+        background-image: url(/~/folder.png);
+    }
+    .icon-movice {
+        background-size: contain;
+        background-image: url(/~/movie.png);
+    }
+    .icon-song {
+        background-size: contain;
+        background-image: url(/~/song.png);
+    }
+    .icon-photo {
+        background-size: contain;
+        background-image: url(/~/photo.png);
+    }
+    .icon-dng {
+        background-size: contain;
+        background-image: url(/~/photo.png);
+    }
+    .icon-text {
+        background-size: contain;
+        background-image: url(/~/text.png);
+    }
+    .icon-other {
+        background-size: contain;
+        background-image: url(/~/other.png);
+    }
