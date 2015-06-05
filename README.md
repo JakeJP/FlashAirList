@@ -5,6 +5,11 @@ WiFi対応のSDメモリカードである [TOSHIBA FlashAir(TM)](http://www.tos
 
 FlashAirへのファイルのアクセスには通常WiFi接続でウェブブラウザを使って閲覧、ファイルのダウンロードなどを行います。この時表示されるページは[FlashAir SDカード上の隠しファイルを使って自由にカスタマイズすることができます](https://flashair-developers.com/ja/documents/api/utility/)。今回は最近のはやりのJavascriptライブラリを使って今風にカスタマイズしたもの一式を公開します。
 
+Smartphone:
+![FlashAir List.htm replacement](https://cloud.githubusercontent.com/assets/318651/7998144/4a959fd4-0b73-11e5-9bd0-d4184d5ac649.jpg)
+
+FullHD screen:
+![FlashAir List.htm replacement](https://cloud.githubusercontent.com/assets/318651/7998154/65faefb8-0b73-11e5-932f-abab2de64232.jpg)
 ####特徴
 
 - FlashAir のブラウザ画面のカスタマイズ版
