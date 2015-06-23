@@ -244,14 +244,12 @@ var FlashAir;
                 }).done(set).fail(function () {
                     me.onHostFailure();
                 }).always(function () {
-                    me.startPolling();
                 });
             }
             else {
                 set();
                 var d = $.Deferred();
                 d.resolve();
-                me.startPolling();
                 return d;
             }
             function set() {
@@ -303,6 +301,7 @@ var FlashAir;
         };
         FlashAirClient.prototype.onHostReady = function () {
             this.trigger("fa.hostready");
+            this.startPolling();
         };
         FlashAirClient.prototype.onHostFailure = function () {
             this.trigger("fa.hostfailure");
@@ -1241,7 +1240,7 @@ var FlashAirApp = (function () {
                 return false;
             });
             $(window).on('hashchange', function () {
-                var m = /DIR=([^&]*)/.exec(location.hash);
+                var m = me.hashDir.exec(location.hash);
                 if (m) {
                     console.log('navigated to ' + m[1]);
                     me.navigate(m[1], false);
@@ -1270,9 +1269,8 @@ var FlashAirApp = (function () {
         }
         else {
             wlansd = [];
-            var m = this.hashDir.exec(location.hash);
-            if (m)
-                this.dir = m[1];
+            var m = this.hashDir.exec(location.hash) || (is_app ? ['', '/'] : /(.*[^\/])\/?$/.exec(location.pathname));
+            this.dir = m ? m[1] : location.pathname;
             this.actionRefresh(false);
         }
     };
@@ -1574,9 +1572,6 @@ $(document).ready(function () {
     //
     var gallery;
     if (!is_chrome_app) {
-        $.get((is_chrome_app || is_ms_app ? "" : "/SD_WLAN/") + "js/pswp.htm", function (result) {
-            $(result).appendTo($("body"));
-        });
         grid.on("click", "div.grid-item a .icon-photo", function (e) {
             e.preventDefault();
             var clickedA = $(this).closest("a");
