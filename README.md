@@ -5,10 +5,10 @@ WiFi対応のSDメモリカードである [TOSHIBA FlashAir(TM)](http://www.tos
 
 FlashAirへのファイルのアクセスには通常WiFi接続でウェブブラウザを使って閲覧、ファイルのダウンロードなどを行います。この時表示されるページは[FlashAir SDカード上の隠しファイルを使って自由にカスタマイズすることができます](https://flashair-developers.com/ja/documents/api/utility/)。今回は最近のはやりのJavascriptライブラリを使って今風にカスタマイズしたもの一式を公開します。
 
-Smartphone:
+####Smartphone:
 ![FlashAir List.htm replacement](https://cloud.githubusercontent.com/assets/318651/7998144/4a959fd4-0b73-11e5-9bd0-d4184d5ac649.jpg)
 
-FullHD screen:
+####FullHD screen:
 ![FlashAir List.htm replacement](https://cloud.githubusercontent.com/assets/318651/7998154/65faefb8-0b73-11e5-932f-abab2de64232.jpg)
 ####特徴
 
@@ -32,7 +32,7 @@ LUAなど 03 に依存した機能は使用していませんが、内臓のス�
 - [Photoswipe](http://photoswipe.com/) MIT
 - (respond.js/html5shiv.js)
 
-比較的新しい技術を用いた結果IE8などの古いブラウザとの互換性は犠牲になっています。（FlashAir内臓のウェブページは多少意識されている様子）
+比較的新しい技術を用いた結果、IE8などの古いブラウザとの互換性は犠牲になっています。
 
 ###インストール方法
 本パッケージにある SD_WLAN ディレクトリの内容を FlashAir のSDカードドライブのルートディレクトリにそのまま上書きしてコピーします。
@@ -44,6 +44,7 @@ LUAなど 03 に依存した機能は使用していませんが、内臓のス�
 
 改定履歴
 -------------
+- パッケージし直し版。シングルページナビゲーション対応。(2015.6.23)
 -  初回リリース (2015.6.4)
 
 ライセンス
